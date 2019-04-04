@@ -16,10 +16,8 @@ for (let ob in arr) {
         delay: delay,
         ease: Power1.easeInOut
     })
-
     delay += 0.25;
 }
-
 //
 for (let item in hobbiesLi) {
     if (item < hobbiesLi.length) {
