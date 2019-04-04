@@ -1,0 +1,56 @@
+<!-- views/partials/head.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test-animations</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <script>
+        let images=[];
+       
+        <% for(let i = 0; i < images.length; i++) { %>
+             images.push("<%= (images[i]) %>")
+        <% } %>
+        console.log(images);
+    </script>
+    
+    <div id="titlesContainer">
+        <h1 id='title'>ALI ABU RAS!...</h1>
+        <h1 id='job'>Front-end Engineer</h1>
+        <h1 id='work'>MBC-Group</h1>
+        <h1 id='hobbies'>My best hobbies are,
+            <ul id="unorderList">
+                <li class="hobby">Photography</li>
+                <li class="hobby">Arabic Hand Write</li>
+                <li class="hobby">Sport</li>
+            </ul>
+        </h1>
+    </div>
+
+
+    <div id="gallery">
+        <div class="button btn-left" onclick=nextImage()><img src="/op/next.svg"></div>
+        <div id="imagesContainer">
+
+        </div>
+        <div class="button btn-right" onclick=previousImage()><img src="/op/back.svg"></div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
+    <script src="/js/main.js"></script> 
+</body>
+
+</html>

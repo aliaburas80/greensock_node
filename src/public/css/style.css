@@ -1,0 +1,75 @@
+
+
+div#titlesContainer {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+h1#title,h1#job,h1#work,h1#hobbies {
+    font-size: 30px;
+    font-family: monospace;
+    color: chocolate;
+    text-align: left
+}
+
+ul#unorderList {
+    margin-top: 500px
+}
+
+li.hobby {
+    color: cornflowerblue;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+div#gallery {
+    position: relative;
+    margin: 101px auto auto auto;
+    max-width: 500px;
+    overflow: hidden;
+    height: 800px;
+}
+
+div#imagesContainer {
+    display: inline-block;
+}
+
+#imagesContainer img{
+    max-width: 500px;
+    display: inline-block;
+    position: absolute;
+}
+
+.button {
+    margin: 0 20px;
+    z-index: 100000;
+    position: inherit;
+    float: right;
+    padding: 15px;
+    /* background: seashell; */
+    margin-top: 31%;
+    width: 10px;
+    cursor: pointer;
+}
+
+.button.btn-right {
+    float: right;
+    right: 0;
+    position: absolute;
+    top: 0;
+    margin-right: 5px;
+}
+
+.button.btn-left img,
+.button.btn-right img {
+    max-width: 38px;
+}
+
+.button.btn-left {
+    float: left;
+    left: 0;
+    position: absolute;
+    top: 0;
+    margin-left: -23px;
+}
