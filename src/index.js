@@ -3,6 +3,7 @@ const imagesFolder = 'src/public/images/';
 const http = require('http')
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 8000;
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 let images = [];
@@ -21,8 +22,8 @@ openHtmlPage = () => {
         });
     });
 
-    app.listen((process.env.PORT || 8080), function () {
-        console.log('listening on *:8080');
+    app.listen(port, () => {
+        console.log("App is running on port " + port);
     });
 }
 
